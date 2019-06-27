@@ -1,8 +1,10 @@
 var user = {};
 user.age = 18;
 user.name = "ada66";
-for (item in user) {
-    console.info(item);
-    console.info(user[item]);
+user["school"] = "ada66";
+user[0] = "ada77";
 
+for (item in user) {
+    console.info(item+":"+user[item]);
 }
+console.info(user[0]);
